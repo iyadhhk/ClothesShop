@@ -1,0 +1,103 @@
+.navbar {
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.514), 0 0px 20px 0 rgba(0, 0, 0, 0.548);
+  /* background-color: #090a0b; */
+  background-color: #1b2431;
+  /* height: 60px; */
+  height: 8vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  padding: 0 40px;
+  /* width: 100%; */
+  top: 0;
+  z-index: 1;
+}
+
+.navbar__nav {
+  display: flex;
+  /* margin-left: 40px; */
+}
+
+.navbar__nav__link {
+  text-transform: uppercase;
+  display: block;
+  padding: 10px;
+  color: white;
+}
+.navbar__nav__link:hover {
+  color: #016795;
+}
+
+.navbar__user {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 600px;
+}
+
+.navbar__user__search {
+  position: relative;
+  display: flex;
+  /* flex: 1; */
+  align-items: center;
+  width: 300px;
+}
+
+.navbar__user__searchInput {
+  height: 12px;
+  padding: 15px;
+  border: none;
+  outline: none;
+
+  width: 100%;
+}
+
+.navbar__user__searchIcon {
+  /* padding: 5px; */
+  position: absolute;
+  cursor: pointer;
+  padding: 5px 10px;
+  right: 0;
+  background-color: #016795;
+}
+.navbar__user__menu {
+  display: flex;
+  align-items: center;
+}
+.navbar__user__account {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+.navbar__user__account > span {
+  padding: 10px;
+  text-align: center;
+  border: none;
+  width: 300px;
+  color: white;
+}
+
+.navbar__user__account__menu {
+  position: absolute;
+  width: 100px;
+  background-color: white;
+  box-shadow: 0 18px 36px rgba(0, 0, 0, 0.3), 0 14px 11px rgba(0, 0, 0, 0.22);
+  height: 0px;
+  transition: height 0.5s;
+  overflow: hidden;
+}
+
+.navbar__user__account:hover > .navbar__user__account__menu {
+  height: 90px;
+}
+.navbar__user__account__menu a {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  color: black;
+}
+.navbar__user__account__menu a:hover {
+  background-color: #016795;
+  color: white;
+}

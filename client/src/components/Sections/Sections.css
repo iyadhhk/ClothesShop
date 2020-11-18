@@ -1,0 +1,76 @@
+.sections {
+  /* display: flex;
+  justify-content: space-between; */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 263px auto;
+  grid-template-areas:
+    'kids hats shoes accessories'
+    'men men women women';
+  gap: 20px;
+
+  padding: 20px 0;
+  width: 1288px;
+}
+.sections__hats {
+  grid-area: hats;
+}
+.sections__kids {
+  grid-area: kids;
+}
+.sections__shoes {
+  grid-area: shoes;
+}
+.sections__accessories {
+  grid-area: accessories;
+}
+.sections__women {
+  grid-area: women;
+  width: 595px;
+  height: 400px;
+}
+.sections__men {
+  /* border: 1px solid gold; */
+  grid-area: men;
+  justify-self: end;
+  width: 595px;
+  height: 400px;
+}
+.sections__menu {
+  position: relative;
+  /* height: 263px; */
+  /* width: 307px; */
+  overflow: hidden;
+}
+
+.sections__menu:hover > .sections__img {
+  transform: scale(1.1);
+  transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+}
+
+.sections__img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.sections__menu__btn {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  outline: none;
+  text-transform: uppercase;
+  /* border-radius: 50px; */
+  color: white;
+  background-color: rgba(1, 102, 149, 0.712);
+  padding: 15px 25px;
+  cursor: pointer;
+  border: none;
+}
+
+.sections__menu__btn:hover {
+  background-color: #016795;
+}

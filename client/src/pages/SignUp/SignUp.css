@@ -1,0 +1,113 @@
+.signup {
+  display: flex;
+  flex-direction: row-reverse;
+  padding-right: 100px;
+  background-image: url('../../bg-5.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 92vh;
+}
+.signup__section {
+  /* height: 100vh; */
+  padding-top: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.signup__container {
+  background-color: white;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  width: 400px;
+  height: 450px;
+  display: flex;
+  /* align-items: center; */
+  flex-direction: column;
+  border: 1px solid lightgray;
+  padding: 10px 40px;
+}
+
+.signup__container > h1 {
+  color: #1b2431;
+  font-weight: 500;
+  margin-bottom: 40px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.signup__form__group {
+  position: relative;
+}
+.signup__form__group > h4 {
+  margin-bottom: 5px;
+  /* font-weight: 200; */
+  color: #1b2431;
+}
+.signup__form__group > span {
+  position: absolute;
+  right: 10px;
+  bottom: 5px;
+  color: red;
+  font-size: 0.8rem;
+}
+
+.signup__container__form__input {
+  height: 30px;
+  margin-bottom: 25px;
+  width: 98%;
+  border: none;
+  outline: none;
+}
+.valid__input {
+  border-bottom: 1px solid #016795;
+  background-color: white;
+}
+.error__input {
+  border-bottom: 1px solid red;
+}
+
+.signup__container > p {
+  margin-top: 25px;
+  font-size: 12px;
+  text-align: center;
+}
+
+.signup__signInButton {
+  background: #016795;
+  width: 100%;
+  height: 40px;
+  font-size: 0.9rem;
+  border: none;
+  outline: none;
+  margin-top: 20px;
+  color: white;
+  cursor: pointer;
+}
+/* .signup__signUpButton:focus {
+  box-shadow: none;
+} */
+
+.signup__signInLink {
+  cursor: pointer;
+  font-weight: 400;
+  color: #016795;
+}
+
+/* Spinner */
+.spinner {
+  font-size: 1rem;
+  color: white;
+  animation: rotation 0.5s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
